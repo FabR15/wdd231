@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 15px 24px;
+    }
+
+    .cabecalho span {
+        font-size: 1.4rem;
+    }
+
+    #botaoMenu {
+        display: none;
+    }
+
+    #navegacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    #navegacao a {
+        padding: 14px 24px;
+        border-top: none;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+    .sobre-container {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    .card img {
+        width: 300px;
+    }
+
+    #listaCursos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .filtros {
+        gap: 16px;
+    }
+
+    .filtros button {
+        padding: 12px;
+    }
+
+    footer {
+        padding: 24px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .sobre-container {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    #listaCursos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+}

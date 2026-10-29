@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Página inicial de Fabio Rocha para WDD231, com apresentação pessoal, cursos de desenvolvimento de software e projetos web.">
+    <meta name="author" content="Fabio Rocha">
+
+    <title>WDD 231 – Fundamentos da Web Dinâmica - Fabio Rocha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/obterdatas.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
 </head>
 
 <body>
+<header>
+    <div class="cabecalho">
+        <img src="imagens/logo.svg" alt="" width="50" height="50">
+        <span>Fabio Rocha | WDD231</span>
 
+        <button id="botaoMenu" aria-label="Abrir menu" aria-expanded="false">
+            ☰
+        </button>
+    </div>
+
+    <nav id="navegacao">
+        <a href="index.html" class="ativo">Página Inicial</a>
+        <a href="projeto-camara/">Projeto da Câmara</a>
+        <a href="projeto-final/">Projeto Final</a>
+    </nav>
+</header>
+<main>
+    <h1>Página Inicial</h1>
+
+    <div class="sobre-container">
+        <section class="card">
+            <h2>Sobre Mim</h2>
+            <p>
+                Meu nome é Fabio Rocha da Silva, tenho 22 anos
+                e sou de Sorocaba, São Paulo, Brasil.
+                Estou estudando Desenvolvimento de Software
+                na BYU-Idaho. Gosto de jogar futebol e assistir
+                a filmes.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Foto do Estudante</h2>
+            <img
+                src="imagens/perfil.jpg"
+                alt="Foto de Fabio Rocha da Silva"
+                width="300"
+                height="300"
+            >
+        </section>
+    </div>
+
+    <section class="cursos">
+        <h2>Cursos de Certificado Web</h2>
+
+        <div class="filtros">
+            <button id="todos">Todos</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+        </div>
+
+        <div id="listaCursos"></div>
+
+        <p id="totalCreditos"></p>
+    </section>
+</main>
+
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/fabio-rocha-silva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <p>
+            &copy; <span id="anoatual"></span>
+            Fabio Rocha da Silva | Sorocaba, São Paulo, Brasil
+        </p>
+
+        <p id="ultimaModificacao"></p>
+    </footer>
 </body>
-
 </html>
