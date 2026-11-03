@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Conheça as empresas associadas à Câmara de Comércio de Sorocaba e descubra os serviços oferecidos por nossos membros.">
+
+    <meta name="author" content="Fabio Rocha da Silva">
+
+    <meta property="og:title" content="Diretório | Câmara de Comércio de Sorocaba">
+    <meta property="og:description" content="Conheça as empresas associadas à Câmara de Comércio de Sorocaba.">
+    <meta property="og:image" content="https://fabr15.github.io/wdd231/camara/imagens/logo.svg">
+    <meta property="og:url" content="https://fabr15.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:type" content="website">
+
+    <title>Diretório de Empresas | Câmara de Comércio de Sorocaba</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <script src="scripts/obterdatas.js" defer></script>
+    <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/logo.svg" alt="Logo da Câmara de Comércio" width="50" height="50">
+
+            <span>Câmara de Comércio de Sorocaba</span>
+
+            <button type="button" id="botaoMenu" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navegacao">
+            <a href="../index.html">Página Inicial</a>
+            <a href="diretorio.html" class="ativo">Diretório</a>
+            <a href="associe-se.html">Associe-se</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Diretório de Empresas</h1>
+
+        <div class="botoes-visualizacao">
+            <button id="visualizacaoGrade" aria-label="Visualizar em grade" aria-pressed="true">
+                Grade
+            </button>
+
+            <button id="visualizacaoLista" aria-label="Visualizar em lista" aria-pressed="false">
+                Lista
+            </button>
+        </div>
+
+        <div id="listaMembros" class="grade">
+            <!-- As empresas serão carregadas pelo JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="informacoes-contato">
+            <h2>Câmara de Comércio de Sorocaba</h2>
+            <p>Sorocaba, São Paulo, Brasil</p>
+            <p>Contato: informações da Câmara</p>
+        </div>
+
+        <p>
+            &copy; <span id="anoatual"></span>
+            Fabio Rocha da Silva | WDD 231
+        </p>
+
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+</html>

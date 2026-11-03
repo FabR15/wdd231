@@ -1,0 +1,79 @@
+[
+    {
+        "nome": "ByteForge Tecnologia",
+        "endereco": "Rua das Acácias, 2154",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3847-9012",
+        "site": "https://www.byteforge.tech",
+        "imagem": "byteforge.png",
+        "nivel": 3,
+        "descricao": "Soluções tecnológicas e desenvolvimento de software."
+    },
+    {
+        "nome": "PixelCraft Design",
+        "endereco": "Av. Dom Aguirre, 876",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3298-5643",
+        "site": "https://www.pixelcraft.design",
+        "imagem": "pixelcraft.jpg",
+        "nivel": 2,
+        "descricao": "Design gráfico, identidade visual e marketing digital."
+    },
+    {
+        "nome": "WebMakers Studio",
+        "endereco": "Rua da Penha, 3421",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3456-2189",
+        "site": "https://www.webmakers.com.br",
+        "imagem": "webmakers.jpg",
+        "nivel": 3,
+        "descricao": "Criação de sites e soluções para empresas."
+    },
+    {
+        "nome": "DesignHub Criativo",
+        "endereco": "Av. Afonso Vergueiro, 1890",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3321-7654",
+        "site": "https://www.designhub.com.br",
+        "imagem": "designhub.jpg",
+        "nivel": 1,
+        "descricao": "Agência criativa especializada em comunicação visual."
+    },
+    {
+        "nome": "CodeNova Sistemas",
+        "endereco": "Rua São Bento, 567",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3289-4321",
+        "site": "https://www.codenova.com.br",
+        "imagem": "codenova.jpg",
+        "nivel": 2,
+        "descricao": "Desenvolvimento de sistemas e automação comercial."
+    },
+    {
+        "nome": "VisionTech Soluções",
+        "endereco": "Av. Itavuvu, 4532",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3567-8901",
+        "site": "https://www.visiontech.com.br",
+        "imagem": "visiontech.jpg",
+        "nivel": 3,
+        "descricao": "Consultoria em tecnologia e infraestrutura de TI."
+    },
+    {
+        "nome": "Connect Mais",
+        "endereco": "Rua Coronel Nogueira Padilha, 1200",
+        "cidade": "Sorocaba",
+        "estado": "SP",
+        "telefone": "(15) 3112-4567",
+        "site": "https://www.connectmais.com.br",
+        "imagem": "connectmais.png",
+        "nivel": 1,
+        "descricao": "Serviços de conectividade e soluções empresariais."
+    }
+]
