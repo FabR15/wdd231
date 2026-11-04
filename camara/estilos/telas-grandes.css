@@ -27,47 +27,17 @@
         padding: 24px;
     }
 
-    .sobre-container {
-        grid-template-columns: 2fr 1fr;
-        align-items: stretch;
-    }
-
-    .card {
-        margin-bottom: 0;
-    }
-
-    .card img {
-        width: 300px;
-    }
-
-    #listaCursos {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .filtros {
-        gap: 16px;
-    }
-
-    .filtros button {
-        padding: 12px;
-    }
-
     footer {
         padding: 24px;
     }
-}
 
-@media screen and (min-width: 1000px) {
-    .sobre-container {
-        grid-template-columns: 1.5fr 1fr;
+    #listaMembros.grade {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #listaMembros.lista {
+        display: flex;
+        flex-direction: column;
     }
 }
 
-#listaMembros.grade {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-#listaMembros.lista {
-    display: flex;
-    flex-direction: column;
-}

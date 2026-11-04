@@ -3,6 +3,9 @@ const listaMembros = document.querySelector("#listaMembros");
 async function carregarMembros() {
     try {
         const resposta = await fetch("dados/membros.json");
+        if (!resposta.ok) {
+           throw new Error("Erro ao buscar o arquivo JSON");
+        }
         const membros = await resposta.json();
 
         mostrarMembros(membros);
@@ -30,14 +33,18 @@ function mostrarMembros(membros) {
             <a href="${empresa.site}" target="_blank" rel="noopener noreferrer">
                 ${empresa.site}
             </a>
-            <p>Nível de associação: ${empresa.nivel}</p>
+            <p>Nível de associação: ${nivel[empresa.nivel] || "Não informado"}</p>
             <p>${empresa.descricao}</p>
         `;
 
         listaMembros.appendChild(cartao);
     });
 }
-
+const nivel = {
+    1: "Membro",
+    2: "Prata",
+    3: "Ouro"
+};
 const botaoGrade = document.querySelector("#visualizacaoGrade");
 const botaoLista = document.querySelector("#visualizacaoLista");
 
@@ -58,25 +65,3 @@ botaoLista.addEventListener("click", () => {
 });
 
 carregarMembros();
-
-document.querySelector("#anoatual").textContent =
-    new Date().getFullYear();
-
-document.querySelector("#ultimaModificacao").textContent =
-    `Última modificação: ${document.lastModified}`;
-
-const botaoMenu = document.querySelector("#botaoMenu");
-const navegacao = document.querySelector("#navegacao");
-
-botaoMenu.addEventListener("click", () => {
-    const menuAberto = navegacao.classList.toggle("aberto");
-
-    botaoMenu.setAttribute("aria-expanded", menuAberto);
-
-    botaoMenu.setAttribute(
-        "aria-label",
-        menuAberto ? "Fechar menu" : "Abrir menu"
-    );
-
-    botaoMenu.textContent = menuAberto ? "✕" : "☰";
-});
