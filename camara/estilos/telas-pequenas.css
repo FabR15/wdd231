@@ -276,18 +276,6 @@ button:focus-visible {
     color: #204f70;
 }
 
-.dia-previsao {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-}
-
-.dia-previsao img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
-
 #previsaoTempo {
     display: grid;
     grid-template-columns: 1fr;

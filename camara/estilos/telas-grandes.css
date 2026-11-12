@@ -62,10 +62,7 @@
     #empresasDestaque {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    .dia-previsao {
-    border-bottom: none;
-    border-right: 1px solid #ccc;
-    }
+
     #previsaoTempo {
     grid-template-columns: repeat(3, 1fr);
     }
@@ -73,11 +70,5 @@
     .dia-previsao {
         border-bottom: none;
         border-right: 1px solid #ccc;
-    }
-    #climaAtual img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
     }
 }
