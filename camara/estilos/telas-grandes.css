@@ -39,5 +39,45 @@
         display: flex;
         flex-direction: column;
     }
-}
 
+ /* Página inicial - Hero */
+    .hero img {
+        height: 400px;
+    }
+
+    .botao-cta {
+        bottom: 30px;
+        right: 30px;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    /* Eventos e clima */
+    .informacoes-iniciais {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* Empresas em destaque */
+    #empresasDestaque {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .dia-previsao {
+    border-bottom: none;
+    border-right: 1px solid #ccc;
+    }
+    #previsaoTempo {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dia-previsao {
+        border-bottom: none;
+        border-right: 1px solid #ccc;
+    }
+    #climaAtual img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    }
+}
