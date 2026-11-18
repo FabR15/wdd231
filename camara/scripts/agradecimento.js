@@ -33,7 +33,7 @@ paragrafoData.textContent = `Data e hora do envio: ${dataFormatada}`;
 dadosPedido.appendChild(paragrafoData);
 
 const cargo = parametros.get("cargo");
-const nivel = parametros.get("nivel");
+const nivel = parametros.get("membership");
 const paragrafoCargo = document.createElement("p");
 paragrafoCargo.textContent = `Cargo: ${cargo}`;
 dadosPedido.appendChild(paragrafoCargo);
