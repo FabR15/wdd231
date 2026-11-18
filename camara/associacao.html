@@ -87,7 +87,7 @@
             type="text"
             name="cargo"
             title="Digite seu cargo na organização"
-            autocomplete="cargo-na-organizacao"
+            autocomplete="organization-title"
             pattern="[A-Za-zÀ-ÿ\s-]{7,}"
         >
     </label>
@@ -121,14 +121,14 @@
         type="text"
         name="organizacao"
         title="Digite o nome da sua empresa ou organização"
-        autocomplete="organizacao"
+        autocomplete="organization-title"
         required
     >
     </label>
 
-    <label for="nivel">
+    <label for="membership">
     Nível de associação:
-        <select name="nivel" id="nivel" required>
+        <select name="membership" id="membership" required>
             <option value="" disabled selected>Selecione um nível</option>
             <option value="np">Associação NP</option>
             <option value="bronze">Associação Bronze</option>
